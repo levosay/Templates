@@ -1,0 +1,31 @@
+.projects
+  background-image: url(./../img/welcome-bg.jpg)
+  background-color: #cccccc
+  height: 900px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+.header
+  position: absolute
+  width: 100%
+  min-height: 100px
+  display: grid
+  align-content: center
+  grid-template-columns: 1fr 1fr
+  grid-template-areas: ". nav"
+  border-bottom: 1px solid #A1A1A1
+.nav
+  display: flex
+  grid-area: nav
+  grid-template-columns: 2 / 3
+  &__link
+    text-decoration: none
+    color: $light
+  &__item
+    list-style-type: none
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    padding-right: 40px
