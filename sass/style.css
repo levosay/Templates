@@ -705,35 +705,52 @@ template {
 }
 
 .footer {
+  background-color: #F6F6F8;
+}
+.footer-wrapper {
+  max-width: 1113px;
+  margin: auto;
   display: grid;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "contact links project social";
-  background-color: #F6F6F8;
+  padding: 70px 0;
 }
 .footer-list {
   list-style-type: none;
+  padding-left: 0;
+}
+.footer-list__title {
+  margin-bottom: 35px;
+  white-space: nowrap;
 }
 .footer-list__link {
   text-decoration: none;
+}
+.footer-list__info {
+  margin-bottom: 20px;
 }
 .footer-list__item {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
+  white-space: nowrap;
   color: #999;
 }
-.footer-list__contact {
+.footer-list__img {
+  margin-right: 11px;
+}
+.footer__contact {
   grid-area: contact;
 }
-.footer-list__links {
+.footer__links {
   grid-area: links;
 }
-.footer-list__project {
+.footer__project {
   grid-area: project;
 }
-.footer-list__social {
+.footer__social {
   grid-area: social;
 }
 

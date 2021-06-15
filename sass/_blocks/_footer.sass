@@ -1,24 +1,37 @@
 .footer
-  display: grid
-  align-content: center
-  grid-template-columns: 1fr 1fr 1fr 1fr
-  grid-template-areas: "contact links project social"
   background-color: #F6F6F8
+  &-wrapper
+    max-width: 1113px
+    margin: auto
+    display: grid
+    align-content: center
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-areas: "contact links project social"
+    padding: 70px 0
   &-list
     list-style-type: none
+    padding-left: 0
+    &__title
+      margin-bottom: 35px
+      white-space: nowrap
     &__link
       text-decoration: none
+    &__info
+      margin-bottom: 20px
     &__item
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 22px
+      white-space: nowrap
       color: $gray
-    &__contact
-      grid-area: contact
-    &__links
-      grid-area: links
-    &__project
-      grid-area: project
-    &__social
-      grid-area: social
+    &__img
+      margin-right: 11px
+  &__contact
+    grid-area: contact
+  &__links
+    grid-area: links
+  &__project
+    grid-area: project
+  &__social
+    grid-area: social
