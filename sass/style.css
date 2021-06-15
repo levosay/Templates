@@ -612,4 +612,129 @@ template {
   border-radius: 10px;
 }
 
+.video {
+  max-width: 1113px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 85px;
+  color: #FFF;
+  border-bottom: 1px solid #E0E0E0;
+}
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 570px;
+  background: url(./../img/video-bg.jpg) #fff;
+  z-index: -1;
+}
+.video__title {
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+}
+.video__text {
+  margin-bottom: 70px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+.video-iframe {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feedback {
+  max-width: 1113px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0;
+}
+.feedback__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.feedback__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999;
+  margin-bottom: 30px;
+}
+.feedback__sub-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #999;
+}
+.feedback-form {
+  position: relative;
+  margin-bottom: 35px;
+  left: -90px;
+}
+.feedback-form__input {
+  width: 270px;
+  height: 43px;
+  border: none;
+  background-color: #F5FAFE;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.feedback-form__button {
+  min-width: 190px;
+  height: 45px;
+  border-radius: 0 30px 30px 0;
+  position: absolute;
+  right: -190px;
+  background-color: #4985FF;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "contact links project social";
+  background-color: #F6F6F8;
+}
+.footer-list {
+  list-style-type: none;
+}
+.footer-list__link {
+  text-decoration: none;
+}
+.footer-list__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999;
+}
+.footer-list__contact {
+  grid-area: contact;
+}
+.footer-list__links {
+  grid-area: links;
+}
+.footer-list__project {
+  grid-area: project;
+}
+.footer-list__social {
+  grid-area: social;
+}
+
 /*# sourceMappingURL=style.css.map */

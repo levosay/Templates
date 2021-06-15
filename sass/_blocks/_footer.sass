@@ -1,0 +1,24 @@
+.footer
+  display: grid
+  align-content: center
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-areas: "contact links project social"
+  background-color: #F6F6F8
+  &-list
+    list-style-type: none
+    &__link
+      text-decoration: none
+    &__item
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 22px
+      color: $gray
+    &__contact
+      grid-area: contact
+    &__links
+      grid-area: links
+    &__project
+      grid-area: project
+    &__social
+      grid-area: social
