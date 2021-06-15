@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr
     grid-template-areas: "contact links project social"
     padding: 70px 0
+    border-bottom: 1px solid #E0E0E0
   &-list
     list-style-type: none
     padding-left: 0
@@ -18,6 +19,10 @@
       text-decoration: none
     &__info
       margin-bottom: 20px
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
     &__item
       font-style: normal
       font-weight: normal
@@ -27,6 +32,16 @@
       color: $gray
     &__img
       margin-right: 11px
+  &-bottom
+    text-align: center
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 21px
+    margin-top: 30px
+    margin-bottom: 0
+    padding-bottom: 30px
+    color: $gray
   &__contact
     grid-area: contact
   &__links

@@ -16,6 +16,25 @@
   background-color: rgba(73, 133, 255, 0.8);
 }
 
+.all-links {
+  position: relative;
+}
+.all-links:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  transition: 0.4s;
+  transform: scaleX(0);
+}
+.all-links:before:hover::before {
+  transform: scale(1);
+  z-index: 99;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -373,6 +392,7 @@ template {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: ". nav";
   border-bottom: 1px solid #A1A1A1;
+  z-index: 99;
 }
 
 .nav {
@@ -383,6 +403,19 @@ template {
 .nav__link {
   text-decoration: none;
   color: #FFF;
+  position: relative;
+}
+.nav__link:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -42px;
+  border-bottom: solid 1px #FFF;
+  transition: 0.4s;
+  transform: scaleX(0);
+}
+.nav__link:hover::before {
+  transform: scale(1);
 }
 .nav__item {
   list-style-type: none;
@@ -392,6 +425,7 @@ template {
   font-size: 16px;
   line-height: 20px;
   padding-right: 40px;
+  position: relative;
 }
 
 .welcome {
@@ -683,6 +717,7 @@ template {
   position: relative;
   margin-bottom: 35px;
   left: -90px;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 }
 .feedback-form__input {
   width: 270px;
@@ -702,6 +737,7 @@ template {
   color: #FFF;
   border: none;
   cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 }
 
 .footer {
@@ -715,6 +751,7 @@ template {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "contact links project social";
   padding: 70px 0;
+  border-bottom: 1px solid #E0E0E0;
 }
 .footer-list {
   list-style-type: none;
@@ -729,6 +766,10 @@ template {
 }
 .footer-list__info {
   margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 .footer-list__item {
   font-style: normal;
@@ -741,6 +782,17 @@ template {
 .footer-list__img {
   margin-right: 11px;
 }
+.footer-bottom {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  color: #999;
+}
 .footer__contact {
   grid-area: contact;
 }
@@ -752,6 +804,62 @@ template {
 }
 .footer__social {
   grid-area: social;
+}
+
+.modal {
+  max-width: 700px;
+  border-radius: 15px;
+  background-color: #504DC2;
+  color: #FFF;
+  position: relative;
+  display: none;
+}
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.modal__title {
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+}
+.modal-goods {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+.modal-goods__img {
+  width: 470px;
+}
+
+.description-wrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description-wrapper__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.description-wrapper__price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+.description-wrapper__sum {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: darkred;
 }
 
 /*# sourceMappingURL=style.css.map */

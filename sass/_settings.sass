@@ -13,3 +13,19 @@
 .hover-button
   &:hover
     background-color: rgba($primary, 0.8)
+
+.all-links
+  position: relative
+  &:before
+    content: ''
+    width: 100%
+    position: absolute
+    top: -3px
+    bottom: -3px
+    border-top: solid 1px black
+    border-bottom: solid 1px black
+    transition: 0.4s
+    transform: scaleX(0)
+    &:hover::before
+      transform: scale(1)
+      z-index: 99
